@@ -23,8 +23,8 @@ begin
                 counter <= (others => '0');
                 number <= number + 1;
             end if;
+            LED <= std_logic_vector(number);
         end if;
-        LED <= std_logic_vector(number);
     end process;
 
 end Behavioral;
